@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('./img/snake-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 95vmin;
+    width: 95vmin;
+    background-color: lightgreen;
+    border: 2px solid brown;
+    outline: 2px solid brown;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.grid-snake{
+    background: linear-gradient(to top, red, brown);
+    border-radius: 8px;
+    border: 1px solid rgb(139, 32, 32);
+    z-index: 19;
+}
+.grid-dark{
+    background-color: rgb(130, 231, 130);
+}
+.grid-head{
+    background-color: rgb(114, 31, 31);
+    border-radius: 8px;
+    border: 1px solid rgb(139, 32, 32);
+    z-index: 18;
+}
+
+.grid-food{
+    background-color: orange;
+    border: 1px solid yellow;
+    transform: scale(0.8,0.8);
+    border-radius: 8px;
+}
+.score{
+    font-size: 22px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+}
+.highScore{
+    font-size: 22px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.gmover{
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.6);
+}
+.gmcontent{
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.gmcontent button{
+    cursor: pointer;
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 500px;
+    border: 0.3 px solid gray;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: blue;
+}
+@media screen and (max-width: 945px) {
+    .container {
+        height: 80vmin;
+        width: 80vmin;
+    }
+}
+@media screen and (max-width: 700px) {
+    .highScore{
+        color: white;
+        text-shadow: 0 0 1px black;
+        font-family: sans-serif;
+    }
+}
