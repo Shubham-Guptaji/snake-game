@@ -110,8 +110,8 @@ function snakefn(){
 function foodfn(){
     let x, y;
     do {
-        x = Math.floor(Math.random() * 17);
-        y = Math.floor(Math.random() * 17);
+        x = Math.floor(Math.random() * blocks);
+        y = Math.floor(Math.random() * blocks);
     } while (snake.x.includes(x) && snake.y.includes(y) && compareNums(snake.x,snake.y,x,y));
 
     food = { x: x, y: y };
