@@ -185,7 +185,7 @@ document.addEventListener('touchend', (e) => {
     const touchEndY = e.changedTouches[0].clientY;
     const deltaX = touchEndX - touchStartX;
     const deltaY = touchEndY - touchStartY;
-    const sensitivity = 85;
+    const sensitivity = 95;
 
     if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > sensitivity) {
         dir = { x: deltaX > 0 ? 1 : -1, y: 0 };
