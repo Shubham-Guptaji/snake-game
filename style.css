@@ -60,16 +60,16 @@ body {
 }
 .gmover{
     position: absolute;
+    z-index:25;
     display: none;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.75);
 }
 .gmcontent{
     text-align: center;
-    z-index:25;
     font-size: 28px;
     line-height: 40px;
     font-weight: 700;
